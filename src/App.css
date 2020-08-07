@@ -1,38 +1,223 @@
-.App {
+
+
+.innerDiv{
+
+  width: 50%;
+  background-color:#FAFAFA;
+  min-height:600px;
+  height: 80%;
+  margin: auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+
+  
+  
+
+ 
+  
+  
+
+}
+.innerDiv p{
   text-align: center;
+  padding-top: 20px;
+  font-size: 23px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E5E7E9;
+  margin-bottom: 0px;
+  
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.innerDiv .form{
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  
+}
+.innerDiv .form .input{
+
+  height: 50px;
+  border:none;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0px 3px 15px -12px rgba(0,0,0,0.45); 
+  box-shadow: 0px 3px 15px -12px rgba(0,0,0,0.45);
+  width: 50%;
+  font-weight:bold;
+  
+
+}
+
+.innerDiv .form .input:focus{
+  outline: none;
+}
+
+.innerDiv .btn{
+  margin-top: 15px;
+  border: none;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    background: #1D8348;
+
+    font-weight: bold;
+    color:white;
+    font-size: 14px;
+    min-width: 15%;
+
+}
+.innerDiv .btn:hover{
+
+  -webkit-box-shadow: 0px 3px 15px -12px rgba(0,0,0,1); 
+box-shadow: 0px 3px 15px -12px rgba(0,0,0,1);
+  background:black ;
+  
+}
+.innerDiv .btn:focus{
+  outline: none;
+}
+.checkList{
+
+  
+  width: 100%;
+  
+  margin: auto;
+  margin-top: 20px;
+  
+  
+}
+
+.innerCheckList{
+
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 15px -12px rgba(255, 134, 134, 0.45); 
+  box-shadow: 0px 3px 15px -12px rgba(0,0,0,0.45);
+  
+
+}
+.innerCheckList p{
+
+  font-size: 15px;
+  border-bottom: none;
+  padding:15px;
+  margin:0px;
+  overflow-wrap: break-word;
+
+}
+.innerCheckList h1{
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  padding-top:15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-wrap: break-word;
+}
+.innerCheckList h1:focus{
+  outline: none;
+}
+.innerCheckList .icons{
+  text-align: center;
+  display: none;
+  
+}
+.innerCheckList .icons img{
+  width: 15px;
+  margin: 10px;
+  cursor: pointer;
+  
+}
+
+
+.innerCheckList:hover .icons{
+
+display: block;
+
+}
+
+@media only screen and (max-width: 500px) {
+  body{
+    background-color:#FAFAFA;
+  }
+  .innerDiv{
+   width: 100%;
+   
+ }
+ .innerDiv p{
+   margin: none;
+   padding-top: 0px;
+ }
+ .info p{
+    font-size: 7px;
+ }
+ 
+}
+@media only screen and (max-width: 780px) {
+  body{
+    background-color:#FAFAFA;
+  }
+  .innerDiv{
+   width: 100%;
+   
+ }
+ .info p{
+   font-size: 15px;
+ }
+ .innerDiv p{
+   margin: none;
+   padding-top: 0px;
+ }
+}
+@media only screen and (max-width: 1024px) {
+  body{
+    background-color:#FAFAFA;
+  }
+  .innerDiv{
+   width: 100%;
+   
+ }
+ .innerDiv p{
+   margin: none;
+   padding-top: 0px;
+ }
+}
+
+.middleBtns{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.middleBtns .btnm{
+  
+  
+  margin-top: 15px;
+  padding:13px;
+  border-radius: 3px;
+  
+  background-color: white;
+  -webkit-box-shadow: 0px 3px 15px -12px rgba(0,0,0,0.45); 
+  box-shadow: 0px 3px 15px -12px rgba(0,0,0,0.45);
+  border:1px solid lightgray;
+  cursor: pointer;
+}
+.middleBtns .btnm:focus{
+  outline: none;
+}
+.middleBtns .btnm:hover{
+  background-color:#1D8348;
+  color:white;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.innerDiv .info p{
+  font-size: 15px;
+  padding:10px;
 }
